@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C6ADA2320CA4F3A0031DC43 /* RedSubCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADA2220CA4F3A0031DC43 /* RedSubCtrl.m */; };
+		7CE19EF520C8C5F10071E5B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE19EF420C8C5F10071E5B1 /* AppDelegate.m */; };
+		7CE19EFB20C8C5F10071E5B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE19EF920C8C5F10071E5B1 /* Main.storyboard */; };
+		7CE19EFD20C8C5F30071E5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE19EFC20C8C5F30071E5B1 /* Assets.xcassets */; };
+		7CE19F0020C8C5F30071E5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE19EFE20C8C5F30071E5B1 /* LaunchScreen.storyboard */; };
+		7CE19F0320C8C5F30071E5B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE19F0220C8C5F30071E5B1 /* main.m */; };
+		7CE19F0C20C8C6CC0071E5B1 /* VscTabBarCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE19F0B20C8C6CC0071E5B1 /* VscTabBarCtrl.m */; };
+		7CE19F0F20C8C6DB0071E5B1 /* VscTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE19F0E20C8C6DB0071E5B1 /* VscTabBar.m */; };
+		7CE19F1220C8C6F80071E5B1 /* VscTabBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE19F1120C8C6F80071E5B1 /* VscTabBarModel.m */; };
+		7CE19F1520C90AAE0071E5B1 /* RedCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE19F1420C90AAE0071E5B1 /* RedCtrl.m */; };
+		7CE19F1820C90AC80071E5B1 /* YellowCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE19F1720C90AC80071E5B1 /* YellowCtrl.m */; };
+		7CE19F1B20C90AD80071E5B1 /* BlueCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE19F1A20C90AD80071E5B1 /* BlueCtrl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C6ADA2120CA4F3A0031DC43 /* RedSubCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedSubCtrl.h; sourceTree = "<group>"; };
+		7C6ADA2220CA4F3A0031DC43 /* RedSubCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedSubCtrl.m; sourceTree = "<group>"; };
+		7CE19EF020C8C5F10071E5B1 /* VscTabBarCtrl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VscTabBarCtrl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CE19EF320C8C5F10071E5B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7CE19EF420C8C5F10071E5B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CE19EFA20C8C5F10071E5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CE19EFC20C8C5F30071E5B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CE19EFF20C8C5F30071E5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CE19F0120C8C5F30071E5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CE19F0220C8C5F30071E5B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CE19F0A20C8C6CC0071E5B1 /* VscTabBarCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VscTabBarCtrl.h; sourceTree = "<group>"; };
+		7CE19F0B20C8C6CC0071E5B1 /* VscTabBarCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VscTabBarCtrl.m; sourceTree = "<group>"; };
+		7CE19F0D20C8C6DB0071E5B1 /* VscTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VscTabBar.h; sourceTree = "<group>"; };
+		7CE19F0E20C8C6DB0071E5B1 /* VscTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VscTabBar.m; sourceTree = "<group>"; };
+		7CE19F1020C8C6F80071E5B1 /* VscTabBarModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VscTabBarModel.h; sourceTree = "<group>"; };
+		7CE19F1120C8C6F80071E5B1 /* VscTabBarModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VscTabBarModel.m; sourceTree = "<group>"; };
+		7CE19F1320C90AAE0071E5B1 /* RedCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RedCtrl.h; path = ../../../../../../Visac/Documents/Git/VscTabBarCtrl/Demo/VscTabBarCtrl/RedCtrl.h; sourceTree = "<group>"; };
+		7CE19F1420C90AAE0071E5B1 /* RedCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RedCtrl.m; path = ../../../../../../Visac/Documents/Git/VscTabBarCtrl/Demo/VscTabBarCtrl/RedCtrl.m; sourceTree = "<group>"; };
+		7CE19F1620C90AC80071E5B1 /* YellowCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YellowCtrl.h; sourceTree = "<group>"; };
+		7CE19F1720C90AC80071E5B1 /* YellowCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YellowCtrl.m; sourceTree = "<group>"; };
+		7CE19F1920C90AD80071E5B1 /* BlueCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueCtrl.h; sourceTree = "<group>"; };
+		7CE19F1A20C90AD80071E5B1 /* BlueCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueCtrl.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CE19EED20C8C5F10071E5B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CE19EE720C8C5F10071E5B1 = {
+			isa = PBXGroup;
+			children = (
+				7CE19EF220C8C5F10071E5B1 /* VscTabBarCtrl */,
+				7CE19EF120C8C5F10071E5B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CE19EF120C8C5F10071E5B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CE19EF020C8C5F10071E5B1 /* VscTabBarCtrl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CE19EF220C8C5F10071E5B1 /* VscTabBarCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				7CE19EF320C8C5F10071E5B1 /* AppDelegate.h */,
+				7CE19EF420C8C5F10071E5B1 /* AppDelegate.m */,
+				7CE19F1320C90AAE0071E5B1 /* RedCtrl.h */,
+				7CE19F1420C90AAE0071E5B1 /* RedCtrl.m */,
+				7CE19F1620C90AC80071E5B1 /* YellowCtrl.h */,
+				7CE19F1720C90AC80071E5B1 /* YellowCtrl.m */,
+				7CE19F1920C90AD80071E5B1 /* BlueCtrl.h */,
+				7CE19F1A20C90AD80071E5B1 /* BlueCtrl.m */,
+				7C6ADA2120CA4F3A0031DC43 /* RedSubCtrl.h */,
+				7C6ADA2220CA4F3A0031DC43 /* RedSubCtrl.m */,
+				7CE19F0920C8C68A0071E5B1 /* VscTabBarCtrl */,
+				7CE19EF920C8C5F10071E5B1 /* Main.storyboard */,
+				7CE19EFC20C8C5F30071E5B1 /* Assets.xcassets */,
+				7CE19EFE20C8C5F30071E5B1 /* LaunchScreen.storyboard */,
+				7CE19F0120C8C5F30071E5B1 /* Info.plist */,
+				7CE19F0220C8C5F30071E5B1 /* main.m */,
+			);
+			path = VscTabBarCtrl;
+			sourceTree = "<group>";
+		};
+		7CE19F0920C8C68A0071E5B1 /* VscTabBarCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				7CE19F0A20C8C6CC0071E5B1 /* VscTabBarCtrl.h */,
+				7CE19F0B20C8C6CC0071E5B1 /* VscTabBarCtrl.m */,
+				7CE19F0D20C8C6DB0071E5B1 /* VscTabBar.h */,
+				7CE19F0E20C8C6DB0071E5B1 /* VscTabBar.m */,
+				7CE19F1020C8C6F80071E5B1 /* VscTabBarModel.h */,
+				7CE19F1120C8C6F80071E5B1 /* VscTabBarModel.m */,
+			);
+			name = VscTabBarCtrl;
+			path = ../../../../../../Visac/Documents/Git/VscTabBarCtrl/VscTabBarCtrl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CE19EEF20C8C5F10071E5B1 /* VscTabBarCtrl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CE19F0620C8C5F30071E5B1 /* Build configuration list for PBXNativeTarget "VscTabBarCtrl" */;
+			buildPhases = (
+				7CE19EEC20C8C5F10071E5B1 /* Sources */,
+				7CE19EED20C8C5F10071E5B1 /* Frameworks */,
+				7CE19EEE20C8C5F10071E5B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VscTabBarCtrl;
+			productName = VscTabBarCtrl;
+			productReference = 7CE19EF020C8C5F10071E5B1 /* VscTabBarCtrl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CE19EE820C8C5F10071E5B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = VincentChou;
+				TargetAttributes = {
+					7CE19EEF20C8C5F10071E5B1 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 7CE19EEB20C8C5F10071E5B1 /* Build configuration list for PBXProject "VscTabBarCtrl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CE19EE720C8C5F10071E5B1;
+			productRefGroup = 7CE19EF120C8C5F10071E5B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CE19EEF20C8C5F10071E5B1 /* VscTabBarCtrl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CE19EEE20C8C5F10071E5B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE19F0020C8C5F30071E5B1 /* LaunchScreen.storyboard in Resources */,
+				7CE19EFD20C8C5F30071E5B1 /* Assets.xcassets in Resources */,
+				7CE19EFB20C8C5F10071E5B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CE19EEC20C8C5F10071E5B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C6ADA2320CA4F3A0031DC43 /* RedSubCtrl.m in Sources */,
+				7CE19F1820C90AC80071E5B1 /* YellowCtrl.m in Sources */,
+				7CE19F0F20C8C6DB0071E5B1 /* VscTabBar.m in Sources */,
+				7CE19F1520C90AAE0071E5B1 /* RedCtrl.m in Sources */,
+				7CE19F1220C8C6F80071E5B1 /* VscTabBarModel.m in Sources */,
+				7CE19F1B20C90AD80071E5B1 /* BlueCtrl.m in Sources */,
+				7CE19F0320C8C5F30071E5B1 /* main.m in Sources */,
+				7CE19EF520C8C5F10071E5B1 /* AppDelegate.m in Sources */,
+				7CE19F0C20C8C6CC0071E5B1 /* VscTabBarCtrl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7CE19EF920C8C5F10071E5B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CE19EFA20C8C5F10071E5B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CE19EFE20C8C5F30071E5B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CE19EFF20C8C5F30071E5B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CE19F0420C8C5F30071E5B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7CE19F0520C8C5F30071E5B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CE19F0720C8C5F30071E5B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VscTabBarCtrl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vincent.VscTabBarCtrl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CE19F0820C8C5F30071E5B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VscTabBarCtrl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vincent.VscTabBarCtrl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CE19EEB20C8C5F10071E5B1 /* Build configuration list for PBXProject "VscTabBarCtrl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CE19F0420C8C5F30071E5B1 /* Debug */,
+				7CE19F0520C8C5F30071E5B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CE19F0620C8C5F30071E5B1 /* Build configuration list for PBXNativeTarget "VscTabBarCtrl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CE19F0720C8C5F30071E5B1 /* Debug */,
+				7CE19F0820C8C5F30071E5B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CE19EE820C8C5F10071E5B1 /* Project object */;
+}
