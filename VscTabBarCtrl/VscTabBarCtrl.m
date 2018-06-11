@@ -27,11 +27,12 @@
 -(instancetype)initWithMiddleIndex:(NSInteger)index{
     if (self = [super init]) {
         _middleIndex = index;
+        _useAutoDisplayTabBarWhenRootCtrl = YES;
     }
     return self;
 }
 -(instancetype)init{
-    return [self initWithMiddleIndex:-1];
+    return [self initWithMiddleIndex:-314];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,7 +49,7 @@
 }
 -(void)setSourceCtrls:(NSArray <VscTabBarModel *>*)sourceCtrls defaultIndex:(NSInteger)defaultIndex{
     NSInteger allCount = sourceCtrls.count;
-    if (allCount % 2 == 1 && self.middleIndex == -1) {
+    if (allCount % 2 == 1 && self.middleIndex == -314) {
         self.middleIndex = (allCount - 1) / 2;
     }
     self.myTabBar.middleButtonIndex = self.middleIndex;
@@ -61,10 +62,14 @@
             ctrl.tabBarItem.image = [model.pro_norImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
             ctrl.tabBarItem.selectedImage = [model.pro_selImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
             ctrl.tabBarItem.title = model.pro_ctrlTitle;
-            if (model.pro_titleSelColor) {
+            __weak typeof(ctrl)wc = ctrl;
+            ctrl.viewWillAppearBlock = ^{
+                [((VscTabBarCtrl *)wc.tabBarController) setDisplayBottomTabBar:YES animate:YES];
+            };
+            if (model.pro_titleNorColor) {
                 [ctrl.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:model.pro_titleNorColor} forState:0];
             }
-            if (model.pro_titleNorColor) {
+            if (model.pro_titleSelColor) {
                 [ctrl.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:model.pro_titleSelColor} forState:UIControlStateSelected];
             }
             if (model.pro_noNavigationCtrl) {
@@ -91,23 +96,48 @@
     self.selectedIndex = otherIndex;
     self.selectedIndex = defaultIndex;
 }
+-(void)setUseAutoDisplayTabBarWhenRootCtrl:(BOOL)useAutoDisplayTabBarWhenRootCtrl{
+    if (useAutoDisplayTabBarWhenRootCtrl) {
+        for (UIViewController *vc in self.viewControllers) {
+            UIViewController *tempCtrl = vc;
+            if ([vc isKindOfClass:[UINavigationController class]]) {
+                tempCtrl = ((UINavigationController *)vc).viewControllers[0];
+            }
+            __weak typeof(tempCtrl)wc = tempCtrl;
+            tempCtrl.viewWillAppearBlock = ^{
+                [((VscTabBarCtrl *)wc.tabBarController) setDisplayBottomTabBar:YES animate:YES];
+            };
+        }
+    }else{
+        for (UIViewController *vc in self.viewControllers) {
+            UIViewController *tempCtrl = vc;
+            if ([vc isKindOfClass:[UINavigationController class]]) {
+                tempCtrl = ((UINavigationController *)vc).viewControllers[0];
+            }
+            tempCtrl.viewWillAppearBlock = nil;
+        }
+    }
+}
 -(void)setDisplayBottomTabBar:(BOOL)displayBottomTabBar{
-    _displayBottomTabBar = displayBottomTabBar;
-    [self myTabBarDisplay:displayBottomTabBar];
+    [self setDisplayBottomTabBar:displayBottomTabBar animate:NO];
 }
 -(void)setDisplayBottomTabBar:(BOOL)displayBottomTabBar animate:(BOOL)animate{
-    if (animate) {
-        
-    }else{
-        self.displayBottomTabBar = displayBottomTabBar;
+    if (self.myTabBar.visible != displayBottomTabBar) {
+        self.myTabBar.visible = displayBottomTabBar;
+        CGFloat moveY = 0 + self.myTabBar.realHeight * (displayBottomTabBar ? -1 : 1);
+        if (animate) {
+            [UIView animateWithDuration:0.25 animations:^{
+                [self moveMyTabBarWithY:moveY];
+            }];
+        }else{
+            [self moveMyTabBarWithY:moveY];
+        }
     }
 }
--(void)myTabBarDisplay:(BOOL)display{
-    if (display) {
-        self.myTabBar.hidden = NO;
-    }else{
-        self.myTabBar.hidden = YES;
-    }
+-(void)moveMyTabBarWithY:(CGFloat)moveY{
+    CGRect frame = self.myTabBar.frame;
+    frame.origin.y += moveY;
+    self.myTabBar.frame = frame;
 }
 #pragma mark - TabBarController Delegate
 -(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{

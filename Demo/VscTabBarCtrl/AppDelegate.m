@@ -29,24 +29,38 @@
                            
                            vscTabCtrlCreate(@"YellowCtrl")
                            .ctrlTitle(@"黄色")
+                           .normalColor([UIColor blueColor])
+                           .selectColor([UIColor yellowColor])
+                           .normalImageName(@"left2")
+                           .selectImageName(@"left2_h"),
+                           
+                           vscTabCtrlCreate(@"MiddleCtrl")
+                           .ctrlTitle(@"中间")
                            .normalColor([UIColor blackColor])
-                           .selectColor([UIColor cyanColor])
                            .normalImageName(@"middle")
                            .selectImageName(@"middle_h"),
                            
                            vscTabCtrlCreate(@"BlueCtrl")
-                           .ctrlTitle(@"蓝色")
+                           .ctrlTitle(@"绿色")
                            .normalColor([UIColor yellowColor])
                            .selectColor([UIColor blueColor])
+                           .normalImageName(@"right2")
+                           .selectImageName(@"right2_h"),
+                           
+                           vscTabCtrlCreate(@"GreenCtrl")
+                           .ctrlTitle(@"紫色")
+                           .normalColor([UIColor redColor])
+                           .selectColor([UIColor greenColor])
                            .normalImageName(@"right")
                            .selectImageName(@"right_h")
                            .doNotUseNavigationCtrl,
                            ]
            defaultIndex:0];
     tab.willChangeToTab = ^BOOL(VscTabBarCtrl *__weak tabCtrl, NSInteger index) {
-        if (index == 1) {
+        if (index == 2) {
             if ([tabCtrl.curCtrl isKindOfClass:[UINavigationController class]]) {
-                UIViewController *vc = [[NSClassFromString(@"YellowCtrl") alloc] init];
+                UIViewController *vc = [[NSClassFromString(@"MiddleCtrl") alloc] init];
+                [tabCtrl setDisplayBottomTabBar:NO animate:YES];
                 [((UINavigationController *)tabCtrl.curCtrl) pushViewController:vc animated:YES];
             }
             return NO;

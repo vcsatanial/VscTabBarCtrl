@@ -19,11 +19,16 @@
 @end
 
 @implementation VscTabBar
+-(void)setHidden:(BOOL)hidden{
+    [super setHidden:hidden];
+    self.visible = !hidden;
+}
 -(instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         [self addSubview:self.middleButton];
         [self addSubview:self.middleLabel];
         middleIndex = -1;
+        _visible = YES;
         myBtns = @[].mutableCopy;
     }
     return self;
@@ -36,7 +41,7 @@
 }
 -(void)layoutSubviews{
     [super layoutSubviews];
-    
+    _realHeight = self.frame.size.height + 10;
     int index = 0;
     for (UIView *btn in self.subviews) {
         if ([btn isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
@@ -60,6 +65,8 @@
                 frame.origin = CGPointMake(btn.center.x - frame.size.width / 2, - frame.size.height / 2);
                 self.middleButton.frame = frame;
                 CGFloat height = self.middleLabel.font.lineHeight;
+                
+                _realHeight = self.frame.size.height + frame.size.height / 2;
                 
                 CGFloat y = self.frame.size.height - height;
                 if ([UIScreen instancesRespondToSelector:@selector(currentMode)]) {

@@ -12,5 +12,7 @@
 @property (nonatomic,assign) NSInteger middleButtonIndex;
 @property (nonatomic,strong) UIColor *normalColor;
 @property (nonatomic,strong) UIColor *selectColor;
+@property (nonatomic,assign,readonly) CGFloat realHeight;
+@property (nonatomic,assign) BOOL visible;
 -(void)middleButtonSelected:(BOOL)selected;
 @end

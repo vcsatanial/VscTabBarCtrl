@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "VscTabBarModel.h"
+#import "UIViewController+VscHelperForRootCtrl.h"
 
 @interface VscTabBarCtrl : UITabBarController
 /**
@@ -31,9 +32,14 @@
  */
 @property (nonatomic,assign) BOOL displayBottomTabBar;
 /**
+ 当回到根视图时,会展示出TabBar(默认YES)
+ 设置为NO,对于根视图是否展示TabBar需要自己手动操作
+ */
+@property (nonatomic,assign) BOOL useAutoDisplayTabBarWhenRootCtrl;
+/**
  初始化方法(直接使用init会设定默认的index)
 
- @param index 标识为哪一个位置上使用超过边界的效果
+ @param index 标识为哪一个位置上使用超过边界的效果 -1表示不使用突出效果
  */
 -(instancetype)initWithMiddleIndex:(NSInteger)index;
 

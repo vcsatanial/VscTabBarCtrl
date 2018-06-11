@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7C6ADA2320CA4F3A0031DC43 /* RedSubCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6ADA2220CA4F3A0031DC43 /* RedSubCtrl.m */; };
+		7C8CB15820CE1F2400E58504 /* UIViewController+VscHelperForRootCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8CB15720CE1F2400E58504 /* UIViewController+VscHelperForRootCtrl.m */; };
+		7C8CB15B20CE241300E58504 /* GreenCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8CB15A20CE241300E58504 /* GreenCtrl.m */; };
+		7C8CB16120CE277300E58504 /* MiddleCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8CB16020CE277300E58504 /* MiddleCtrl.m */; };
 		7CE19EF520C8C5F10071E5B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE19EF420C8C5F10071E5B1 /* AppDelegate.m */; };
 		7CE19EFB20C8C5F10071E5B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE19EF920C8C5F10071E5B1 /* Main.storyboard */; };
 		7CE19EFD20C8C5F30071E5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE19EFC20C8C5F30071E5B1 /* Assets.xcassets */; };
@@ -24,6 +27,12 @@
 /* Begin PBXFileReference section */
 		7C6ADA2120CA4F3A0031DC43 /* RedSubCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedSubCtrl.h; sourceTree = "<group>"; };
 		7C6ADA2220CA4F3A0031DC43 /* RedSubCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedSubCtrl.m; sourceTree = "<group>"; };
+		7C8CB15620CE1F2400E58504 /* UIViewController+VscHelperForRootCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VscHelperForRootCtrl.h"; sourceTree = "<group>"; };
+		7C8CB15720CE1F2400E58504 /* UIViewController+VscHelperForRootCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VscHelperForRootCtrl.m"; sourceTree = "<group>"; };
+		7C8CB15920CE241300E58504 /* GreenCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GreenCtrl.h; path = ../../../../../../Visac/Documents/Git/VscTabBarCtrl/Demo/VscTabBarCtrl/GreenCtrl.h; sourceTree = "<group>"; };
+		7C8CB15A20CE241300E58504 /* GreenCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GreenCtrl.m; path = ../../../../../../Visac/Documents/Git/VscTabBarCtrl/Demo/VscTabBarCtrl/GreenCtrl.m; sourceTree = "<group>"; };
+		7C8CB15F20CE277300E58504 /* MiddleCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiddleCtrl.h; sourceTree = "<group>"; };
+		7C8CB16020CE277300E58504 /* MiddleCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiddleCtrl.m; sourceTree = "<group>"; };
 		7CE19EF020C8C5F10071E5B1 /* VscTabBarCtrl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VscTabBarCtrl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CE19EF320C8C5F10071E5B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7CE19EF420C8C5F10071E5B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,6 +93,10 @@
 				7CE19F1720C90AC80071E5B1 /* YellowCtrl.m */,
 				7CE19F1920C90AD80071E5B1 /* BlueCtrl.h */,
 				7CE19F1A20C90AD80071E5B1 /* BlueCtrl.m */,
+				7C8CB15920CE241300E58504 /* GreenCtrl.h */,
+				7C8CB15A20CE241300E58504 /* GreenCtrl.m */,
+				7C8CB15F20CE277300E58504 /* MiddleCtrl.h */,
+				7C8CB16020CE277300E58504 /* MiddleCtrl.m */,
 				7C6ADA2120CA4F3A0031DC43 /* RedSubCtrl.h */,
 				7C6ADA2220CA4F3A0031DC43 /* RedSubCtrl.m */,
 				7CE19F0920C8C68A0071E5B1 /* VscTabBarCtrl */,
@@ -105,6 +118,8 @@
 				7CE19F0E20C8C6DB0071E5B1 /* VscTabBar.m */,
 				7CE19F1020C8C6F80071E5B1 /* VscTabBarModel.h */,
 				7CE19F1120C8C6F80071E5B1 /* VscTabBarModel.m */,
+				7C8CB15620CE1F2400E58504 /* UIViewController+VscHelperForRootCtrl.h */,
+				7C8CB15720CE1F2400E58504 /* UIViewController+VscHelperForRootCtrl.m */,
 			);
 			name = VscTabBarCtrl;
 			path = ../../../../../../Visac/Documents/Git/VscTabBarCtrl/VscTabBarCtrl;
@@ -182,13 +197,16 @@
 			files = (
 				7C6ADA2320CA4F3A0031DC43 /* RedSubCtrl.m in Sources */,
 				7CE19F1820C90AC80071E5B1 /* YellowCtrl.m in Sources */,
+				7C8CB15B20CE241300E58504 /* GreenCtrl.m in Sources */,
 				7CE19F0F20C8C6DB0071E5B1 /* VscTabBar.m in Sources */,
 				7CE19F1520C90AAE0071E5B1 /* RedCtrl.m in Sources */,
 				7CE19F1220C8C6F80071E5B1 /* VscTabBarModel.m in Sources */,
 				7CE19F1B20C90AD80071E5B1 /* BlueCtrl.m in Sources */,
+				7C8CB15820CE1F2400E58504 /* UIViewController+VscHelperForRootCtrl.m in Sources */,
 				7CE19F0320C8C5F30071E5B1 /* main.m in Sources */,
 				7CE19EF520C8C5F10071E5B1 /* AppDelegate.m in Sources */,
 				7CE19F0C20C8C6CC0071E5B1 /* VscTabBarCtrl.m in Sources */,
+				7C8CB16120CE277300E58504 /* MiddleCtrl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

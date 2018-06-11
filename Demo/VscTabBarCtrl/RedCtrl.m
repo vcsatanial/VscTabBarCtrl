@@ -15,6 +15,11 @@
 
 @implementation RedCtrl
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+//    [((VscTabBarCtrl *)self.tabBarController) setDisplayBottomTabBar:YES animate:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -32,14 +37,14 @@
 -(void)enterSubCtrl{
     NSString *className = @"RedSubCtrl";
     UIViewController *vc = [[NSClassFromString(className) alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 -(void)enterSubCtrl2{
     NSString *className = @"RedSubCtrl";
     UIViewController *vc = [[NSClassFromString(className) alloc] init];
-//    vc.hidesBottomBarWhenPushed = YES;
-    [((VscTabBarCtrl *)self.tabBarController) setDisplayBottomTabBar:NO animate:NO];
+    [((VscTabBarCtrl *)self.tabBarController) setDisplayBottomTabBar:NO animate:YES];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
