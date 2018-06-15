@@ -41,7 +41,7 @@
 }
 -(VscTabBarModel *(^)(UIImage *))selectImage{
     return ^(UIImage *image){
-        self.pro_norImage = image;
+        self.pro_selImage = image;
         return self;
     };
 }
