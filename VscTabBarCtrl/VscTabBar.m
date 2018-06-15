@@ -12,6 +12,8 @@
     NSInteger middleIndex;
     UIView *middleView;
     NSMutableArray *myBtns;
+    BOOL useCustomFrame;
+    BOOL useCustomY;
 }
 @property (nonatomic,strong) UIButton *middleButton;
 @property (nonatomic,strong) UILabel *middleLabel;
@@ -39,6 +41,14 @@
 -(NSInteger)middleButtonIndex{
     return middleIndex;
 }
+-(void)setBtnSize:(CGSize)btnSize{
+    useCustomFrame = YES;
+    _btnSize = btnSize;
+}
+-(void)setBtnY:(CGFloat)btnY{
+    useCustomY = YES;
+    _btnY = btnY;
+}
 -(void)layoutSubviews{
     [super layoutSubviews];
     _realHeight = self.frame.size.height + 10;
@@ -61,8 +71,16 @@
                 [self.middleButton setBackgroundImage:item.selectedImage forState:UIControlStateSelected];
                 
                 CGRect frame;
-                frame.size = CGSizeMake(self.middleButton.currentBackgroundImage.size.width, self.middleButton.currentBackgroundImage.size.height);
-                frame.origin = CGPointMake(btn.center.x - frame.size.width / 2, - frame.size.height / 2);
+                if (useCustomFrame) {
+                    frame.size = self.btnSize;
+                }else{
+                    frame.size = CGSizeMake(self.middleButton.currentBackgroundImage.size.width, self.middleButton.currentBackgroundImage.size.height);
+                }
+                CGFloat originY = - frame.size.height / 2;
+                if (useCustomY) {
+                    originY = self.btnY;
+                }
+                frame.origin = CGPointMake(btn.center.x - frame.size.width / 2, originY);
                 self.middleButton.frame = frame;
                 CGFloat height = self.middleLabel.font.lineHeight;
                 

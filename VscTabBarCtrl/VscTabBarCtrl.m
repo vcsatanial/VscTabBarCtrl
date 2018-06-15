@@ -121,6 +121,13 @@
 -(void)setDisplayBottomTabBar:(BOOL)displayBottomTabBar{
     [self setDisplayBottomTabBar:displayBottomTabBar animate:NO];
 }
+-(void)setMiddleBtnSize:(CGSize)middleBtnSize{
+    self.myTabBar.btnSize = middleBtnSize;
+}
+-(void)setMiddleSize:(CGSize)size orighY:(CGFloat)y{
+    self.myTabBar.btnSize = size;
+    self.myTabBar.btnY = y;
+}
 -(void)setDisplayBottomTabBar:(BOOL)displayBottomTabBar animate:(BOOL)animate{
     if (self.myTabBar.visible != displayBottomTabBar) {
         self.myTabBar.visible = displayBottomTabBar;

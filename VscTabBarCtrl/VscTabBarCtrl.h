@@ -60,4 +60,17 @@
  @param animate 是否有动画效果
  */
 -(void)setDisplayBottomTabBar:(BOOL)displayBottomTabBar animate:(BOOL)animate;
+/**
+ 自定义中间按钮的尺寸(默认middleBtn提高效果)
+
+ @param size 大小
+ */
+-(void)setMiddleSize:(CGSize)size;
+/**
+ 自定义中间按钮的尺寸
+ 
+ @param size 大小
+ @param y 可以影响按钮的高度
+ */
+-(void)setMiddleSize:(CGSize)size orighY:(CGFloat)y;
 @end

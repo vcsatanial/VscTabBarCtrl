@@ -13,6 +13,8 @@
 @property (nonatomic,strong) UIColor *normalColor;
 @property (nonatomic,strong) UIColor *selectColor;
 @property (nonatomic,assign,readonly) CGFloat realHeight;
+@property (nonatomic,assign) CGSize btnSize;
+@property (nonatomic,assign) CGFloat btnY;
 @property (nonatomic,assign) BOOL visible;
 -(void)middleButtonSelected:(BOOL)selected;
 @end

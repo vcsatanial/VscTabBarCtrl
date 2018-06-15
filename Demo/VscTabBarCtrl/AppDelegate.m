@@ -56,6 +56,7 @@
                            .doNotUseNavigationCtrl,
                            ]
            defaultIndex:0];
+    [tab setMiddleSize:CGSizeMake(100, 49) orighY:0];
     tab.willChangeToTab = ^BOOL(VscTabBarCtrl *__weak tabCtrl, NSInteger index) {
         if (index == 2) {
             if ([tabCtrl.curCtrl isKindOfClass:[UINavigationController class]]) {
