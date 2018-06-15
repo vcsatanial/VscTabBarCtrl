@@ -121,8 +121,8 @@
 -(void)setDisplayBottomTabBar:(BOOL)displayBottomTabBar{
     [self setDisplayBottomTabBar:displayBottomTabBar animate:NO];
 }
--(void)setMiddleBtnSize:(CGSize)middleBtnSize{
-    self.myTabBar.btnSize = middleBtnSize;
+-(void)setMiddleSize:(CGSize)size{
+    self.myTabBar.btnSize = size;
 }
 -(void)setMiddleSize:(CGSize)size orighY:(CGFloat)y{
     self.myTabBar.btnSize = size;
