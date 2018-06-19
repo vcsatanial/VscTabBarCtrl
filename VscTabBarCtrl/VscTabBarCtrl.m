@@ -95,6 +95,9 @@
     }
     self.selectedIndex = otherIndex;
     self.selectedIndex = defaultIndex;
+    if (self.middleIndex == defaultIndex) {
+        [self.myTabBar middleButtonSelected:YES];
+    }
 }
 -(void)setUseAutoDisplayTabBarWhenRootCtrl:(BOOL)useAutoDisplayTabBarWhenRootCtrl{
     if (useAutoDisplayTabBarWhenRootCtrl) {

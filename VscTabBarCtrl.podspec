@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name             = 'VscTabBarCtrl'
   spec.ios.deployment_target = '8.0'
-  spec.version          = '1.0.3'
+  spec.version          = '1.0.4'
   spec.summary          = '可以自定义Tabbar样式'
   spec.description      = <<-DESC
                        利用hittest实现了超出边距的可点击效果,同时又增加了选中非选中状态的文字颜色的更改
